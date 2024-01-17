@@ -1,0 +1,253 @@
+2024-01-15 03:04:53 info: server running at http://localhost:3000
+2024-01-15 03:05:16 info: server running at http://localhost:3000
+2024-01-15 03:06:24 info: server running at http://localhost:3000
+2024-01-15 03:08:36 info: server running at http://localhost:3000
+2024-01-15 03:08:39 info: server running at http://localhost:3000
+2024-01-15 03:09:46 info: server running at http://localhost:3000
+2024-01-15 03:10:09 info: server running at http://localhost:3000
+2024-01-15 03:11:09 info: server running at http://localhost:3000
+2024-01-15 03:11:48 info: server running at http://localhost:3000
+2024-01-15 03:33:47 info: server running at http://localhost:3000
+2024-01-15 03:35:26 info: server running at http://localhost:3000
+2024-01-15 03:35:31 info: server running at http://localhost:3000
+2024-01-15 23:43:58 info: server running at http://localhost:3000
+2024-01-15 23:44:01 error: RegisterUser Error PrismaClientValidationError: 
+Invalid `client.user.create()` invocation in
+E:\school_management_system\backend\src\authentication\auth.service.ts:37:46
+
+  34   throw new Error("user profile could not be created");
+  35 }
+  36 
+→ 37 const newUser: IUser = await client.user.create({
+       data: {
+         email: "maanas@gmail.com",
+         password: "maanas123",
+         role: "user",
+         profileId: "eb100a00-bc0d-44f7-9222-3fa1f1ca64c3",
+     +   username: String
+       }
+     })
+
+Argument `username` is missing.
+Error: PrismaClientValidationError: 
+Invalid `client.user.create()` invocation in
+E:\school_management_system\backend\src\authentication\auth.service.ts:37:46
+
+  34   throw new Error("user profile could not be created");
+  35 }
+  36 
+→ 37 const newUser: IUser = await client.user.create({
+       data: {
+         email: "maanas@gmail.com",
+         password: "maanas123",
+         role: "user",
+         profileId: "eb100a00-bc0d-44f7-9222-3fa1f1ca64c3",
+     +   username: String
+       }
+     })
+
+Argument `username` is missing.
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:54:13
+    at Generator.throw (<anonymous>)
+    at rejected (E:\school_management_system\backend\src\authentication\auth.service.ts:6:65)
+2024-01-15 23:44:30 info: server running at http://localhost:3000
+2024-01-15 23:44:31 error: RegisterUser Error PrismaClientValidationError: 
+Invalid `client.user.create()` invocation in
+E:\school_management_system\backend\src\authentication\auth.service.ts:37:46
+
+  34   throw new Error("user profile could not be created");
+  35 }
+  36 
+→ 37 const newUser: IUser = await client.user.create({
+       data: {
+         email: "maanas@gmail.com",
+         password: "maanas123",
+         role: "user",
+         profileId: "9a9c6074-5ab2-4efe-951d-237c929b0c25",
+     +   username: String
+       }
+     })
+
+Argument `username` is missing.
+Error: PrismaClientValidationError: 
+Invalid `client.user.create()` invocation in
+E:\school_management_system\backend\src\authentication\auth.service.ts:37:46
+
+  34   throw new Error("user profile could not be created");
+  35 }
+  36 
+→ 37 const newUser: IUser = await client.user.create({
+       data: {
+         email: "maanas@gmail.com",
+         password: "maanas123",
+         role: "user",
+         profileId: "9a9c6074-5ab2-4efe-951d-237c929b0c25",
+     +   username: String
+       }
+     })
+
+Argument `username` is missing.
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:54:13
+    at Generator.throw (<anonymous>)
+    at rejected (E:\school_management_system\backend\src\authentication\auth.service.ts:6:65)
+2024-01-15 23:44:57 info: server running at http://localhost:3000
+2024-01-16 00:58:20 info: server running at http://localhost:3000
+2024-01-16 01:33:56 info: server running at http://localhost:3000
+2024-01-16 01:33:58 info: server running at http://localhost:3000
+2024-01-16 01:34:03 info: server running at http://localhost:3000
+2024-01-16 01:41:51 info: server running at http://localhost:3000
+2024-01-16 01:47:20 info: server running at http://localhost:3000
+2024-01-16 01:51:19 info: server running at http://localhost:3000
+2024-01-16 02:59:25 info: server running at http://localhost:3000
+2024-01-16 17:52:10 info: server running at http://localhost:3000
+2024-01-16 17:52:59 info: server running at http://localhost:3000
+2024-01-16 19:23:51 info: server running at http://localhost:3000
+2024-01-16 19:26:05 info: server running at http://localhost:3000
+2024-01-16 19:26:31 info: server running at http://localhost:3000
+2024-01-16 19:26:36 info: server running at http://localhost:3000
+2024-01-16 19:51:49 info: server running at http://localhost:3000
+2024-01-16 19:52:01 info: server running at http://localhost:3000
+2024-01-16 19:52:29 info: server running at http://localhost:3000
+2024-01-16 19:55:15 info: server running at http://localhost:3000
+2024-01-16 19:55:17 info: server running at http://localhost:3000
+2024-01-16 19:57:39 info: server running at http://localhost:3000
+2024-01-16 19:57:44 info: server running at http://localhost:3000
+2024-01-16 20:05:39 info: server running at http://localhost:3000
+2024-01-16 20:10:10 info: server running at http://localhost:3000
+2024-01-16 20:11:31 info: server running at http://localhost:3000
+2024-01-16 20:11:37 info: server running at http://localhost:3000
+2024-01-16 20:12:23 info: server running at http://localhost:3000
+2024-01-16 20:12:38 info: server running at http://localhost:3000
+2024-01-16 20:13:47 info: server running at http://localhost:3000
+2024-01-16 20:15:57 info: server running at http://localhost:3000
+2024-01-16 20:16:07 info: server running at http://localhost:3000
+2024-01-16 20:16:23 info: server running at http://localhost:3000
+2024-01-16 20:17:41 info: server running at http://localhost:3000
+2024-01-16 20:22:14 info: server running at http://localhost:3000
+2024-01-16 20:27:32 info: server running at http://localhost:3000
+2024-01-16 20:31:48 info: server running at http://localhost:3000
+2024-01-16 21:18:59 info: server running at http://localhost:3000
+2024-01-16 21:19:06 info: server running at http://localhost:3000
+2024-01-16 21:19:20 info: server running at http://localhost:3000
+2024-01-16 21:37:11 info: server running at http://localhost:3000
+2024-01-16 21:37:31 info: server running at http://localhost:3000
+2024-01-16 21:38:24 info: server running at http://localhost:3000
+2024-01-17 14:38:45 info: server running at http://localhost:3000
+2024-01-17 14:38:48 info: server running at http://localhost:3000
+2024-01-17 14:39:05 info: server running at http://localhost:3000
+2024-01-17 14:39:16 info: server running at http://localhost:3000
+2024-01-17 14:39:39 info: server running at http://localhost:3000
+2024-01-17 14:39:42 info: server running at http://localhost:3000
+2024-01-17 14:40:03 info: server running at http://localhost:3000
+2024-01-17 14:40:44 info: server running at http://localhost:3000
+2024-01-17 14:41:06 info: server running at http://localhost:3000
+2024-01-17 14:42:26 info: server running at http://localhost:3000
+2024-01-17 14:42:29 info: server running at http://localhost:3000
+2024-01-17 14:43:00 info: server running at http://localhost:3000
+2024-01-17 14:44:37 info: server running at http://localhost:3000
+2024-01-17 14:48:39 info: server running at http://localhost:3000
+2024-01-17 14:49:09 info: server running at http://localhost:3000
+2024-01-17 14:49:24 info: server running at http://localhost:3000
+2024-01-17 14:49:29 info: server running at http://localhost:3000
+2024-01-17 14:49:39 info: server running at http://localhost:3000
+2024-01-17 14:50:34 info: server running at http://localhost:3000
+2024-01-17 14:51:06 info: server running at http://localhost:3000
+2024-01-17 14:51:37 error: RegisterUser Error Error: error while generating access token
+Error: Error: error while generating access token
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:52:11 info: server running at http://localhost:3000
+2024-01-17 14:52:14 error: RegisterUser Error Error: user already exists
+Error: Error: user already exists
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:52:23 error: RegisterUser Error Error: error while generating access token
+Error: Error: error while generating access token
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:53:09 info: server running at http://localhost:3000
+2024-01-17 14:53:15 error: RegisterUser Error Error: user already exists
+Error: Error: user already exists
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:53:18 error: RegisterUser Error Error: error while generating access token
+Error: Error: error while generating access token
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:53:30 info: server running at http://localhost:3000
+2024-01-17 14:53:38 info: server running at http://localhost:3000
+2024-01-17 14:54:01 info: server running at http://localhost:3000
+2024-01-17 14:54:18 error: RegisterUser Error Error: user already exists
+Error: Error: user already exists
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:54:25 error: RegisterUser Error Error: error while generating access token
+Error: Error: error while generating access token
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 14:56:07 info: server running at http://localhost:3000
+2024-01-17 14:56:47 info: server running at http://localhost:3000
+2024-01-17 14:56:56 info: server running at http://localhost:3000
+2024-01-17 15:06:26 error: RegisterUser Error Error: user already exists
+Error: Error: user already exists
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 15:06:38 error: RegisterUser Error Error: error while generating access token
+Error: Error: error while generating access token
+    at E:\school_management_system\backend\src\authentication\auth.service.ts:58:10
+    at Generator.next (<anonymous>)
+    at fulfilled (E:\school_management_system\backend\src\authentication\auth.service.ts:5:58)
+2024-01-17 15:08:03 info: server running at http://localhost:3000
+2024-01-17 15:09:15 info: server running at http://localhost:3000
+2024-01-17 15:11:16 info: server running at http://localhost:3000
+2024-01-17 17:00:46 info: server running at http://localhost:3000
+2024-01-17 18:10:00 info: server running at http://localhost:3000
+2024-01-17 18:10:37 info: server running at http://localhost:3000
+2024-01-17 18:11:23 info: server running at http://localhost:3000
+2024-01-17 18:14:18 info: server running at http://localhost:3000
+2024-01-17 18:16:30 info: server running at http://localhost:3000
+2024-01-17 18:16:37 info: server running at http://localhost:3000
+2024-01-17 18:18:43 info: server running at http://localhost:3000
+2024-01-17 18:29:10 info: server running at http://localhost:3000
+2024-01-17 18:30:12 info: server running at http://localhost:3000
+2024-01-17 18:30:59 info: server running at http://localhost:3000
+2024-01-17 18:37:04 info: server running at http://localhost:3000
+2024-01-17 18:37:40 info: server running at http://localhost:3000
+2024-01-17 18:37:56 info: server running at http://localhost:3000
+2024-01-17 18:40:07 info: server running at http://localhost:3000
+2024-01-17 18:44:04 info: server running at http://localhost:3000
+2024-01-17 18:45:38 info: server running at http://localhost:3000
+2024-01-17 18:45:43 info: server running at http://localhost:3000
+2024-01-17 18:46:01 info: server running at http://localhost:3000
+2024-01-17 18:46:25 info: server running at http://localhost:3000
+2024-01-17 18:50:01 info: server running at http://localhost:3000
+2024-01-17 18:50:06 info: server running at http://localhost:3000
+2024-01-17 18:50:35 info: server running at http://localhost:3000
+2024-01-17 18:52:51 info: server running at http://localhost:3000
+2024-01-17 19:06:50 info: server running at http://localhost:3000
+2024-01-17 19:06:59 info: server running at http://localhost:3000
+2024-01-17 19:15:12 info: server running at http://localhost:3000
+2024-01-17 19:18:22 info: server running at http://localhost:3000
+2024-01-17 19:18:41 info: server running at http://localhost:3000
+2024-01-17 19:18:46 info: server running at http://localhost:3000
+2024-01-17 19:19:11 info: server running at http://localhost:3000
+2024-01-17 19:23:17 info: server running at http://localhost:3000
+2024-01-17 19:23:23 info: server running at http://localhost:3000
+2024-01-17 19:25:03 info: server running at http://localhost:3000
+2024-01-17 19:31:57 info: server running at http://localhost:3000
+2024-01-17 19:34:12 info: server running at http://localhost:3000
+2024-01-17 19:34:17 info: server running at http://localhost:3000
+2024-01-17 19:34:28 info: server running at http://localhost:3000
+2024-01-17 19:41:28 info: server running at http://localhost:3000
+2024-01-17 19:42:03 info: server running at http://localhost:3000
+2024-01-17 19:42:10 info: server running at http://localhost:3000
+2024-01-17 19:42:36 info: server running at http://localhost:3000
+2024-01-17 19:42:43 info: server running at http://localhost:3000
