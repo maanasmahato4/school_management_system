@@ -10,11 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/charts": "^7.4.1",
+    "@mantine/core": "^7.4.1",
+    "@mantine/dates": "^7.4.1",
+    "@mantine/form": "^7.4.1",
+    "@mantine/hooks": "^7.4.1",
+    "@mantine/notifications": "^7.4.1",
     "axios": "^1.6.5",
+    "dayjs": "^1.11.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recharts": "2"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -23,6 +32,10 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "postcss-preset-mantine": "^1.12.3",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.2.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
