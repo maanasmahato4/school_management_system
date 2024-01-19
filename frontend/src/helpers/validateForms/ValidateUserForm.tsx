@@ -7,7 +7,6 @@ function ValidateFields(
 	userCreds: TUser | TSignInUser,
 ): Record<string, string> {
 	const errors: Record<string, string> = {};
-
 	if ('username' in userCreds) {
 		if ((userCreds as TUser).username.length < 6) {
 			errors.username = 'username must be atleast 6 characters long';

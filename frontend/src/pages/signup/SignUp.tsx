@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Container, TextInput, Alert } from '@mantine/core';
 import { TUser } from './@types';
-import ValidateFields from '../../components/validateForms/ValidateUserForm';
+import ValidateFields from '../../helpers/validateForms/ValidateUserForm';
 import { IconInfoCircle } from '@tabler/icons-react';
 
 const SignUp: React.FC = () => {
