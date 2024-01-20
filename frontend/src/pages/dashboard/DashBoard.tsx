@@ -1,7 +1,12 @@
-import React from 'react';
+import { Fragment } from 'react';
+import { Outlet } from 'react-router-dom';
 
-const DashBoard: React.FC = () => {
-	return <p>Dashboard</p>;
+const DashBoard = () => {
+	return (
+		<Fragment>
+			<Outlet/>
+		</Fragment>
+	);
 };
 
 export default DashBoard;

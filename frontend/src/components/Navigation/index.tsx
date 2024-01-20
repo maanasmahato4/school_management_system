@@ -1,11 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { Flex, Group, ActionIcon } from '@mantine/core';
 import { IconLogout2 } from '@tabler/icons-react';
 
 const LinkStyle = { color: 'black', textDecoration: 'none' };
 
-const NavigationBar: React.FC = () => {
+const NavigationBar = () => {
 	return (
 		<Flex justify="space-between" style={{ marginInline: '1rem' }}>
 			<p>logo</p>

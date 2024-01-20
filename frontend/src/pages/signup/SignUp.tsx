@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Container, TextInput, Alert } from '@mantine/core';
 import { TUser } from './@types';
 import ValidateFields from '../../helpers/validateForms/ValidateUserForm';
 import { IconInfoCircle } from '@tabler/icons-react';
 
-const SignUp: React.FC = () => {
+const SignUp = () => {
 	const [formErrors, setFormErrors] = useState<Record<string, string | null>>({
 		username: null,
 		email: null,

@@ -1,10 +1,10 @@
 import { Alert, Button, Container, TextInput } from '@mantine/core';
-import React, { FormEvent, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { IconInfoCircle } from '@tabler/icons-react';
 import ValidateFields from '../../helpers/validateForms/ValidateUserForm';
 import { TSignInUser } from './@types';
 
-const SignIn: React.FC = () => {
+const SignIn = () => {
 	const [formErrors, setFormErrors] = useState<Record<string, string>>({
 		email: '',
 		password: '',
