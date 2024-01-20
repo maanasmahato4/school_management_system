@@ -3,7 +3,7 @@ import {} from './@types';
 
 const ExamRoutine = () => {
 	return (
-		<Table highlightOnHover withTableBorder withColumnBorders>
+		<Table highlightOnHover withTableBorder withColumnBorders withRowBorders>
 			<Table.Thead>
 				<Table.Tr>
 					<Table.Th>Date</Table.Th>

@@ -3,10 +3,12 @@ import {} from './@types';
 
 const ClassRoutine = () => {
 	return (
-		<Table>
+		<Table withRowBorders withColumnBorders withTableBorder highlightOnHover>
 			<Table.Thead>
 				<Table.Tr>
-					<Table.Th colSpan={4} style={{textAlign: 'center'}}>Subjects</Table.Th>
+					<Table.Th colSpan={4} style={{ textAlign: 'center' }}>
+						Subjects
+					</Table.Th>
 				</Table.Tr>
 				<Table.Tr>
 					<Table.Th>Day</Table.Th>

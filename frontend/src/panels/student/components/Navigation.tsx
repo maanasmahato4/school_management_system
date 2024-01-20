@@ -2,28 +2,37 @@ import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 const LinkStyle = {
-	color: 'black',
 	textDecoration: 'none',
+	color: 'black',
 	marginBlock: '0.3rem',
 };
 
-const ParentPanelNavigation = () => {
+const StudentPanelNavigation = () => {
 	return (
 		<Fragment>
 			<Link style={LinkStyle} to="contacts">
 				Contact
 			</Link>
+			<Link style={LinkStyle} to="Attendance">
+				Attendance
+			</Link>
+			<Link style={LinkStyle} to="exam-routine">
+				Exam Routine
+			</Link>
+			<Link style={LinkStyle} to="exam-marks">
+				Exam Marks
+			</Link>
 			<Link style={LinkStyle} to="class-routine">
-				Routine
+				Class Routine
 			</Link>
 			<Link style={LinkStyle} to="payment-invoices">
 				Payment Invoices
 			</Link>
-			<Link style={LinkStyle} to="exam-routine">
-				Exam Routine
+			<Link style={LinkStyle} to="study-materials">
+				Study Materials
 			</Link>
 		</Fragment>
 	);
 };
 
-export default ParentPanelNavigation;
+export default StudentPanelNavigation;

@@ -1,7 +1,7 @@
 import { Container, Text } from '@mantine/core';
 import ClassRoutine from '../../../components/ClassRoutine/ClassRoutine';
 
-const ParentPanelRoutine = () => {
+const StudentPanelClassRoutine = () => {
 	return (
 		<Container>
 			<Text
@@ -15,4 +15,4 @@ const ParentPanelRoutine = () => {
 	);
 };
 
-export default ParentPanelRoutine;
+export default StudentPanelClassRoutine;

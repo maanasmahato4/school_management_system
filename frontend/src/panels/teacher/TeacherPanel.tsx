@@ -1,18 +1,17 @@
 import { AppShell } from '@mantine/core';
-import ParentPanelNavigation from './components/Navigation';
 import { Outlet } from 'react-router-dom';
+import StudentPanelNavigation from './components/Navigation';
 
-const ParentPanel = () => {
+const TeacherPanel = () => {
 	return (
 		<AppShell
 			navbar={{
 				width: 300,
 				breakpoint: 'sm',
 			}}
-			padding="md"
 		>
-			<AppShell.Navbar p="md">
-				<ParentPanelNavigation />
+			<AppShell.Navbar p="sm">
+				<StudentPanelNavigation />
 			</AppShell.Navbar>
 			<AppShell.Main p="sm">
 				<Outlet />
@@ -21,4 +20,4 @@ const ParentPanel = () => {
 	);
 };
 
-export default ParentPanel;
+export default TeacherPanel;

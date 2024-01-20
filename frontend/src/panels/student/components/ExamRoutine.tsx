@@ -1,7 +1,7 @@
 import { Container, Text } from '@mantine/core';
 import ExamRoutine from '../../../components/ExamRoutine/ExamRoutine';
 
-const ParentPanelExamRoutine = () => {
+const StudentPanelExamRoutine = () => {
 	return (
 		<Container>
 			<Text
@@ -10,9 +10,9 @@ const ParentPanelExamRoutine = () => {
 			>
 				Exam routine for 1st terminal Exam
 			</Text>
-			<ExamRoutine />
+            <ExamRoutine/>
 		</Container>
 	);
 };
 
-export default ParentPanelExamRoutine;
+export default StudentPanelExamRoutine;
