@@ -13,7 +13,7 @@ const StudentPanelNavigation = () => {
 			<Link style={LinkStyle} to="exam-routine">
 				Exam Routine
 			</Link>
-			<Link style={LinkStyle} to="exam-marks">
+			<Link style={LinkStyle} to="manage-marks">
 				Exam Marks
 			</Link>
 			<Link style={LinkStyle} to="class-routine">
@@ -21,6 +21,18 @@ const StudentPanelNavigation = () => {
 			</Link>
 			<Link style={LinkStyle} to="study-materials">
 				Study Materials
+			</Link>
+			<Link style={LinkStyle} to="contacts">
+				Contacts
+			</Link>
+			<Link style={LinkStyle} to="manage-exam">
+				Manage Exam
+			</Link>
+			<Link style={LinkStyle} to="manage-students">
+				Manage Students
+			</Link>
+			<Link style={LinkStyle} to="manage-attendance">
+				Manage Attendance
 			</Link>
 		</Fragment>
 	);

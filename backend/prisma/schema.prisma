@@ -10,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// user
 model User {
   id        String   @id @default(uuid())
   username  String
@@ -31,3 +32,22 @@ model Profile {
   userId  String? @unique
   user    User?
 }
+
+// class routine
+model DayRoutine {
+  id            String      @id @default(uuid())
+  weekRoutineId String
+  day           String
+  subject1      String
+  subject2      String
+  subject3      String
+  weekRoutine   WeekRoutine @relation(fields: [weekRoutineId], references: [id])
+}
+
+model WeekRoutine {
+  id          String       @id @default(uuid())
+  faculty     String
+  dayRoutines DayRoutine[]
+}
+
+// exam routine

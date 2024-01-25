@@ -16,13 +16,38 @@ import ParentPanelContact from './panels/parent/components/Contact';
 import ParentPanelExamRoutine from './panels/parent/components/ExamRoutine';
 import ParentPanelPaymentInvoices from './panels/parent/components/Invoices';
 import ParentPanelRoutine from './panels/parent/components/Routine';
+import TeacherPanel from './panels/teacher/TeacherPanel';
+import TeacherPanelContacts from './panels/teacher/components/TeacherPanelContacts';
+import TeacherPanelManageExam from './panels/teacher/components/ManageExams';
+import TeacherPanelManageMarks from './panels/teacher/components/ManageMarks';
+import TeacherPanelManageStudents from './panels/teacher/components/ManageStudents';
+import TeacherPanelManageAttendance from './panels/teacher/components/ManageAttendance';
+import TeacherPanelProvideStudyMaterials from './panels/teacher/components/ProvideStudyMaterials';
+import TeacherPanelManageExamRoutine from './panels/teacher/components/ManageExamRoutine';
+import TeacherPanelManageClassRoutine from './panels/teacher/components/ManageClassRoutine';
 
 function AppRoutes() {
 	return (
 		<Routes>
 			<Route path="/*" element={<DashBoard />}>
 				<Route path="admin" />
-				<Route path="teacher" />
+				<Route path="teacher/*" element={<TeacherPanel />}>
+					<Route index element={<TeacherPanelContacts />} />
+					<Route path="contacts" element={<TeacherPanelContacts />} />
+					<Route path="class-routine" element={<TeacherPanelManageClassRoutine />} />
+					<Route path="exam-routine" element={<TeacherPanelManageExamRoutine />} />
+					<Route path="manage-exam" element={<TeacherPanelManageExam />} />
+					<Route path="manage-marks" element={<TeacherPanelManageMarks />} />
+					<Route path="manage-students" element={<TeacherPanelManageStudents />} />
+					<Route
+						path="manage-attendance"
+						element={<TeacherPanelManageAttendance />}
+					/>
+					<Route
+						path="study-materials"
+						element={<TeacherPanelProvideStudyMaterials />}
+					/>
+				</Route>
 				<Route path="student/*" element={<StudentPanel />}>
 					<Route index element={<StudentPanelContacts />} />
 					<Route path="contacts" index element={<StudentPanelContacts />} />
