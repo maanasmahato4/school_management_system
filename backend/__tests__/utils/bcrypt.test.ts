@@ -1,4 +1,4 @@
-import { hashPassword, comparePasswords } from '../bcrypt';
+import { hashPassword, comparePasswords } from '../../src/utils/bcrypt.js';
 import { hash, compare } from 'bcrypt';
 
 const password = 'password';

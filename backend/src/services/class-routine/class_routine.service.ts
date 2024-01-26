@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { TDayRoutine, TDayRoutineWithId } from './@types';
+import { TDayRoutine, TDayRoutineWithId } from './@types/index.js';
 
 const client = new PrismaClient();
 

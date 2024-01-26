@@ -5,6 +5,7 @@
 	"main": "app.ts",
 	"author": "Maanas Mahato",
 	"license": "MIT",
+	"type": "module",
 	"devDependencies": {
 		"@types/bcrypt": "^5.0.2",
 		"@types/config": "^3.3.3",

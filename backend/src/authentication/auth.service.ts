@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
-import { TUser, TProfile, TSignUp, TSignIn } from './@types';
-import { comparePasswords, hashPassword } from '../utils/bcrypt';
-import { generateAccessToken } from '../utils/jsonwebtoken.generator';
+import { TUser, TProfile, TSignUp, TSignIn } from './@types/index.js';
+import { comparePasswords, hashPassword } from '../utils/bcrypt.js';
+import { generateAccessToken } from '../utils/jsonwebtoken.generator.js';
 
 const client = new PrismaClient();
 

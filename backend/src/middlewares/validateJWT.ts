@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import { verifyJWT } from '../utils/jsonwebtoken.generator';
-import logger from '../shared/logger';
+import { verifyJWT } from '../utils/jsonwebtoken.generator.js';
+import logger from '../shared/logger.js';
 import { JwtPayload } from 'jsonwebtoken';
 
 export interface RequestWithUserCreds extends Request {
