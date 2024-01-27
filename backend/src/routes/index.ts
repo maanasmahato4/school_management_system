@@ -1,4 +1,5 @@
 import { Router } from 'express';
+
 import {
 	RegisterUser,
 	SignIn,
@@ -6,12 +7,31 @@ import {
 	UpdateUserProfile,
 	DeleteUser,
 } from '../authentication/auth.controller.ts';
+
+import {
+	DayRoutines,
+	AddDayRoutine,
+	UpdateDayRoutine,
+	DeleteDayRoutine,
+	DeleteWeekRoutine,
+} from '../panels/teacher/teacher-panel.controller.ts';
+
 import validateResource from '../middlewares/validateResource.middleware.ts';
+
 import {
 	deleteUserSchemaObject,
 	signInSchemaObject,
 	signUpSchemaObject,
 } from '../schema/user.schema.ts';
+
+import {
+	dayRoutineSchemaObject,
+	updateDayRoutineSchemaObject,
+	getDayRoutinesSchemaObject,
+	deleteWeekRoutineSchemaObject,
+	deleteDayRoutineSchemaObject,
+} from '../schema/routine.schema.ts';
+
 import validateJWT from '../middlewares/validateJWT.ts';
 import verifyRole from '../middlewares/verifyRole.ts';
 import { Role } from '../enums/roles.enum.ts';
@@ -31,5 +51,34 @@ router
 		validateResource(deleteUserSchemaObject),
 		DeleteUser,
 	);
+
+// class routine
+router
+	.get(
+		'/class-routine',
+		validateResource(getDayRoutinesSchemaObject),
+		DayRoutines,
+	)
+	.post(
+		'/class-routine',
+		validateResource(dayRoutineSchemaObject),
+		AddDayRoutine,
+	)
+	.put(
+		'/class-routine/:id',
+		validateResource(updateDayRoutineSchemaObject),
+		UpdateDayRoutine,
+	)
+	.delete(
+		'/class-routine/day/:id',
+		validateResource(deleteDayRoutineSchemaObject),
+		DeleteDayRoutine,
+	)
+	.delete(
+		'/class-routine/week',
+		validateResource(deleteWeekRoutineSchemaObject),
+		DeleteWeekRoutine,
+	);
+
 
 export default router;

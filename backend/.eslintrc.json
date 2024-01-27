@@ -18,6 +18,7 @@
 		"indent": "off",
 		"linebreak-style": ["warn", "windows"],
 		"quotes": ["warn", "single"],
-		"semi": ["warn", "always"]
+		"semi": ["warn", "always"],
+		"typescript-eslint/no-explicit-any": "off"
 	}
 }

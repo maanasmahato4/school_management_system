@@ -6,11 +6,11 @@ import {
 	getDayRoutine,
 	getDayRoutines,
 	updateDayRoutine,
-} from '../../src/services/class-routine/class_routine.service.ts';
+} from '../services/class-routine/class_routine.service.ts';
 import {
 	TDayRoutine,
 	TDayRoutineWithId,
-} from '../../src/services/class-routine/@types/index.ts';
+} from '../services/class-routine/@types/index.ts';
 
 const client = new PrismaClient();
 
