@@ -2,8 +2,8 @@ import express, { Express } from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import config from 'config';
-import logger from './shared/logger';
-import routes_v1 from './routes';
+import logger from './shared/logger.ts';
+import routes_v1 from './routes/index.ts';
 
 const app: Express = express();
 

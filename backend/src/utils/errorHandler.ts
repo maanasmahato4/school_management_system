@@ -1,5 +1,5 @@
 import { ErrorRequestHandler, Request, Response } from 'express';
-import logger from '../shared/logger';
+import logger from '../shared/logger.ts';
 
 export async function errorHandler(
 	err: ErrorRequestHandler,

@@ -1,5 +1,5 @@
 import { Response, NextFunction } from 'express';
-import { RequestWithUserCreds } from './validateJWT.js';
+import { RequestWithUserCreds } from './validateJWT.ts';
 
 export default function verifyRole(allowedRoles: string[]) {
 	return (

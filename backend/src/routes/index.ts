@@ -5,16 +5,16 @@ import {
 	SignOut,
 	UpdateUserProfile,
 	DeleteUser,
-} from '../authentication/auth.controller.js';
-import validateResource from '../middlewares/validateResource.middleware.js';
+} from '../authentication/auth.controller.ts';
+import validateResource from '../middlewares/validateResource.middleware.ts';
 import {
 	deleteUserSchemaObject,
 	signInSchemaObject,
 	signUpSchemaObject,
-} from '../schema/user.schema.js';
-import validateJWT from '../middlewares/validateJWT.js';
-import verifyRole from '../middlewares/verifyRole.js';
-import { Role } from '../enums/roles.enum.js';
+} from '../schema/user.schema.ts';
+import validateJWT from '../middlewares/validateJWT.ts';
+import verifyRole from '../middlewares/verifyRole.ts';
+import { Role } from '../enums/roles.enum.ts';
 
 const router = Router();
 

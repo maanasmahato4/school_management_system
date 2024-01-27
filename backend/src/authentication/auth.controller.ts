@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { createUser, signin, updateUser, deleteUser } from './auth.service.js';
-import logger from '../shared/logger.js';
+import { createUser, signin, updateUser, deleteUser } from './auth.service.ts';
+import logger from '../shared/logger.ts';
 
 export async function RegisterUser(req: Request, res: Response) {
 	try {

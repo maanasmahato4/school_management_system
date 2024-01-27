@@ -1,6 +1,6 @@
 import jwt, { JsonWebTokenError, JwtPayload } from 'jsonwebtoken';
 import config from 'config';
-import { TUser } from '../authentication/@types';
+import { TUser } from '../authentication/@types/index.ts';
 
 const ACCESS_TOKEN_SECRET = config.get<string>('ACCESS_TOKEN_SECRET');
 const REFRESH_TOKEN_SECRET = config.get<string>('REFRESH_TOKEN_SECRET');

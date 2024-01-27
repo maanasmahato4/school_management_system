@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-import { TDayRoutine, TDayRoutineWithId } from './@types/index.js';
+import { TDayRoutine, TDayRoutineWithId } from './@types/index.ts';
 
 const client = new PrismaClient();
 
@@ -58,6 +58,7 @@ export async function updateDayRoutine(dayRoutine: TDayRoutineWithId) {
 		if (!updatedDayRoutine) {
 			throw new Error(`error updating dayRoutine of id:${dayRoutine.id}`);
 		}
+		return updatedDayRoutine;
 	} catch (error: unknown) {
 		if (error instanceof Error) {
 			throw error;
@@ -70,11 +71,15 @@ export async function updateDayRoutine(dayRoutine: TDayRoutineWithId) {
 }
 export async function deleteDayRoutine(id: string) {
 	try {
+		const dayRoutine = await client.dayRoutine.findUnique({ where: { id } });
+		if (!dayRoutine) {
+			throw new Error(`DayRoutine with id:${id} does not exist`);
+		}
 		const deletedDayRoutine = await client.dayRoutine.delete({ where: { id } });
 		if (!deletedDayRoutine) {
 			throw new Error(`DayRoutine with id:${id} was not deleted`);
 		}
-		return deletedDayRoutine;
+		return true;
 	} catch (error: unknown) {
 		if (error instanceof Error) {
 			throw error;
@@ -83,13 +88,18 @@ export async function deleteDayRoutine(id: string) {
 		}
 	}
 }
+
 export async function deleteWeekRoutine(id: string) {
 	try {
+		const weekRoutine = await client.weekRoutine.findUnique({ where: { id } });
+		if (!weekRoutine) {
+			throw new Error(`DayRoutine with id:${id} does not exist`);
+		}
 		const deletedWeekRoutine = await client.weekRoutine.delete({ where: { id } });
 		if (!deletedWeekRoutine) {
 			throw new Error(`WeekRoutine with id:${id} was not deleted`);
 		}
-		return deleteWeekRoutine;
+		return true;
 	} catch (error: unknown) {
 		if (error instanceof Error) {
 			throw error;
